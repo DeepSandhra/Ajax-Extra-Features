@@ -39,15 +39,22 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Aᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 ᴍᴏᴠɪᴇꜱ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ 🎬 💠', url='https://t.me/punjabi_funn'),
-            InlineKeyboardButton('💠 ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ 📥 💠', url='https://t.me/allMoviesavailable_2022')
+            InlineKeyboardButton('𝙼𝙾𝚅𝙸𝙴𝚂 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝙾𝚃 🎬', url='https://t.me/MovieRequestGroup_rebot')
+            ],[
+            InlineKeyboardButton('♥Mʏ ɢʀᴏᴜᴘ♥', url='https://t.me/Movies_hunt_2022')
+            ],[
+            InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ 📥', url='https://t.me/Movies_DATABASE_2022'),
+            InlineKeyboardButton('𝚂𝙴𝙰𝚁𝙲𝙷 𝙷𝙴𝚁𝙴 𝙼𝙾𝚅𝙸𝙴🔎', switch_inline_query_current_chat='')
+            ],[
+            InlineKeyboardButton(' Cᴏɴᴛᴀᴄᴛ😎 ', url='https://t.me/movi2x'),
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ🗃️', url='https://t.me/MovieRequestGroup_rebot')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ Hᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('📛 ΛBOUT 📛', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ ᴍᴏᴠɪᴇꜱ ʀᴇQᴜᴇꜱᴛ ʙᴏᴛ 🎬 ✅', url='http://t.me/MovieRequestGroup_rebot')
+            InlineKeyboardButton('✅ 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎  ✅', url='https://youtube.com/channel/UC36Y9w_AM4H_ZWipKUg93QQ')
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -82,15 +89,22 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⚚ ΛᎠᎠ MΞ ϮԾ YԾUᏒ GᏒԾUᎮ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Aᴅᴅ ᴍᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('💠 ᴍᴏᴠɪᴇꜱ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ 🎬 💠', url='https://t.me/punjabi_funn'),
-            InlineKeyboardButton('💠 ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ 📥 💠', url='https://t.me/allMoviesavailable_2022')
+            InlineKeyboardButton('𝙼𝙾𝚅𝙸𝙴𝚂 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙱𝙾𝚃 🎬', url='https://t.me/MovieRequestGroup_rebot')
+            ],[
+            InlineKeyboardButton('♥Mʏ ɢʀᴏᴜᴘ♥', url='https://t.me/Movies_hunt_2022')
+            ],[
+            InlineKeyboardButton('ᴍᴏᴠɪᴇꜱ ᴄʜᴀɴɴᴇʟ 📥', url='https://t.me/Movies_DATABASE_2022'),
+            InlineKeyboardButton('𝚂𝙴𝙰𝚁𝙲𝙷 𝙷𝙴𝚁𝙴 𝙼𝙾𝚅𝙸𝙴🔎', switch_inline_query_current_chat='')
+            ],[
+            InlineKeyboardButton(' Cᴏɴᴛᴀᴄᴛ😎 ', url='https://t.me/movi2x'),
+            InlineKeyboardButton('Sᴏᴜʀᴄᴇ🗃️', url='https://t.me/MovieRequestGroup_rebot')
             ],[      
-            InlineKeyboardButton('♻️ HΞLᎮ ♻️', callback_data='help'),
-            InlineKeyboardButton('♻️ ΛBOUT ♻️', callback_data='about')
+            InlineKeyboardButton('♻️ Hᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('📛 ΛBOUT 📛', callback_data='about')
             ],[
-            InlineKeyboardButton('✅ ᴍᴏᴠɪᴇꜱ ʀᴇQᴜᴇꜱᴛ ʙᴏᴛ 🎬 ✅', url='http://t.me/MovieRequestGroup_rebot')
+            InlineKeyboardButton('✅ 𝚂𝚞𝚋𝚜𝚌𝚛𝚒𝚋𝚎  ✅', url='https://youtube.com/channel/UC36Y9w_AM4H_ZWipKUg93QQ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
